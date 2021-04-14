@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QLSinhVienActivity">
+     <LinearLayout
+         android:id="@+id/layoutLop"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:text="Lớp:"
+             android:textSize="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <androidx.appcompat.widget.AppCompatSpinner
+             android:id="@+id/spLop"
+             android:background="#ff0000"
+             android:layout_marginLeft="80dp"
+             android:layout_width="match_parent"
+             android:layout_height="40dp"/>
+     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutID"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:text="ID sinh viên:"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtIDSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutTen"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Tên sinh viên:"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtTenSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/layoutNgaySinh"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:text="Ngày sinh:"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <Button
+            android:layout_below="@+id/layoutNgaySinh"
+            android:id="@+id/btnThemSV"
+            android:text="Thêm Sinh Viên"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/layoutTieuDe2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btnThemSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="STT"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="ID"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="HỌ TÊN"
+            android:layout_marginLeft="24dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="NGÀY SINH"
+            android:layout_marginLeft="24dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="LỚP"
+            android:layout_marginLeft="24dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/lvSV"
+        android:layout_below="@+id/layoutTieuDe2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
